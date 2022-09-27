@@ -1,23 +1,9 @@
 import array, io, os
 
 """
-~~ OPPGAVE 2b ~~
-
 Dette programmet beskriver en teque, som er en beholder hvor man kan legge til nye elementer først, 
 sist, og i midten av køen.
 
-I overgangen fra pseudokode til pythonprogam fant vi ut at for å øke størrelsen på listen underveis
-måtte vi bruke teque.append(None) for å legge til et element på slutten av listen, for så å overskrive
-det etterpå med det elementet som skulle flyttes dit.
-
-Siden skrev vi om koden for å prøve å kunne levere den på Kattis, og har nå endret alle operasjonene
-til å kjøre på O(1). Dette gjøres ved å initialisere et array som er tre ganger så stort som antall
-inputs, og setter starten av tequen til å starte på teque[antall_inputs], og slutten på 
-teque[antall_inputs * 2]. Deretter bruker vi litt matte for å finne ut hvor man skal sette inn nye
-elementer, balanserer køen underveis, og regner ut hvilken indeks vi skal hente elementer fra.
-Dette gir en ganske rask implementasjon, men vi antar at I/O ikke er rask nok, siden den fortsatt 
-ikke godkjennes på Kattis (selv om vi har byttet ut de vanlige lese- og skrivemetodene med noen 
-mer effektive).
 """
 
 class teque:
